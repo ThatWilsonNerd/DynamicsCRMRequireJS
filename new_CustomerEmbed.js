@@ -1,4 +1,4 @@
-//  use RequireJS to ensure Knockout is loaded prior to running our stuff
+//  use RequireJS to ensure Knockout/XrmServiceToolkit libraries are loaded prior to running our stuff
 requirejs(['new_knockout','new_XrmServiceToolkit'], function(ko) {
  	//  create our view model
 	function Model() {
