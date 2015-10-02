@@ -6,7 +6,11 @@ requirejs(['new_knockout','new_XrmServiceToolkit'], function(ko) {
 		self.fullname = ko.observable(null);
 		
 		// do some stuff to get the data from the customer (assuming a contact)
-		self.fullname('Billy Bob');
+		self.getData = function() {
+			// we can put whatever code calls the XrmServiceToolkit here to grab our CRM data and set the fullname.
+			self.fullname('Billy Bob');
+		}
+		self.getData();
 	}
   
  	//  apply it
